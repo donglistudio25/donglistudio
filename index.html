@@ -402,12 +402,11 @@ body{
 
 <!-- HERO -->
 <section id="hero">
-  <iframe
-    src="https://www.youtube.com/embed/VREq9VrVyaE?autoplay=1&muted=1&loop=1&playlist=VREq9VrVyaE&controls=0&showinfo=0&rel=0&modestbranding=1"
-    style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);min-width:100%;min-height:100%;width:177.78vh;height:56.25vw;border:none;pointer-events:none;"
-    allow="autoplay; encrypted-media"
-    allowfullscreen>
-  </iframe>
+  <video
+    autoplay muted loop playsinline
+    style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);min-width:100%;min-height:100%;width:177.78vh;height:56.25vw;object-fit:cover;border:none;pointer-events:none;">
+    <source src="video.mp4" type="video/mp4">
+  </video>
   <div class="hero-overlay"></div>
 </section>
 
@@ -533,7 +532,7 @@ function openContact(){contactModal.classList.add('open');}
 function closeContact(){contactModal.classList.remove('open');}
 contactModal.addEventListener('click',e=>{if(e.target===contactModal)closeContact();});
 
-
+// video.mp4 autoplay
 </script>
 </body>
 </html>
